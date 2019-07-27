@@ -1,0 +1,21 @@
+<div class="jumbotron">
+        <h1 class="display-3 ndiv">Create a Component!</h1>
+        <br>
+                 
+    <form class="ndiv">
+        <fieldset>
+            <div class="form-group ">
+                <label for="Name">Component Name</label>
+                <input type="text" [(ngModel)]="compmodl.name" class="form-control" id="Name" name="Name">
+            </div>
+            <div class="form-group">
+                <label for="Color">Background Color</label>
+                <input type="text" class="form-control" id="Color" [(ngModel)]="compmodl.color" name="Color">
+            </div>
+            <button type="button" (click)="saveContact()" class="btn btn-primary">Spawn</button>
+        </fieldset>
+    </form>
+
+</div>
+
+

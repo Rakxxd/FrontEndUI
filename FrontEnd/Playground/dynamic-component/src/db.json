@@ -1,0 +1,98 @@
+{
+    "DashboardCard": [
+        {
+            "input": {
+                "name": {
+                    "key": "name",
+                    "value": "My value"
+                },
+                "routerLink": {
+                    "key": "DashboardCard.metadata.ROUTERLINK",
+                    "value": "/user"
+                },
+                "iconClass": {
+                    "key": "DashboardCard.metadata.ICONCLASS",
+                    "value": ""
+                },
+                "id": {
+                    "value": 1
+                },
+                "color": {
+                    "key": "DashboardCard.metadata.COLOR",
+                    "value": "black"
+                }
+            },           
+            "component":{
+                "name":"DashboardUserComponent"
+            },
+            "services": {
+                "provide": "DashboardCardsService",
+                "useClass": "DashboardCardsService",
+                "deps": "[HttpClient]"
+            }
+        },
+        {
+           "input": {
+                "name": {
+                    "key": "DashboardCard.metadata.NAME",
+                    "value": "Hero value"
+                },
+                "routerLink": {
+                    "key": "DashboardCard.metadata.ROUTERLINK",
+                    "value": "/user"
+                },
+                "iconClass": {
+                    "key": "DashboardCard.metadata.ICONCLASS",
+                    "value": ""
+                },
+                "id": {
+                    "value":2
+                },
+                "color": {
+                    "key": "DashboardCard.metadata.COLOR",
+                    "value": "red"
+                }
+            },           
+            "component":{
+                "name":"DashboardUserComponent"
+            },
+            "services": {
+                "provide": "DashboardCardsService",
+                "useClass": "DashboardCardsService",
+                "deps": "[HttpClient]"
+            }
+        },
+        {
+            
+            "input": {
+                "name": {
+                    "key": "DashboardCard.metadata.NAME",
+                    "value": "My Hero"
+                },
+                "routerLink": {
+                    "key": "DashboardCard.metadata.ROUTERLINK",
+                    "value": "/user"
+                },
+                "iconClass": {
+                    "key": "DashboardCard.metadata.ICONCLASS",
+                    "value": ""
+                },
+                "id": {
+                    "value":3
+                },
+                "color": {
+                    "key": "DashboardCard.metadata.COLOR",
+                    "value": "green"
+                }
+            },           
+            "component":{
+                "name":"DashboardUserComponent"
+            },
+            "services": {
+                "provide": "DashboardCardsService",
+                "useClass": "DashboardCardsService",
+                "deps": "[HttpClient]"
+            }
+        }
+    ]
+}

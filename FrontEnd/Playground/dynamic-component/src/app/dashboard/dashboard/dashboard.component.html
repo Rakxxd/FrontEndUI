@@ -1,0 +1,17 @@
+<app-add-new-component></app-add-new-component>
+<div class="row">
+  <div class="col"></div>
+  <div class="col-md-6">
+
+    <ul class="list-group">
+      <!-- <li class="list-group-item" *ngFor="let c of contacts | async"> -->
+      <li class="list-group-item" *ngFor="let card of cardsArray">
+        <app-dashboard-cards-spawner [card]="card"></app-dashboard-cards-spawner>
+      </li>
+    </ul>
+
+
+
+  </div>
+  <div class="col"></div>
+</div>

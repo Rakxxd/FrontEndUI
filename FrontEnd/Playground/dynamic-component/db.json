@@ -1,0 +1,66 @@
+{
+  "DashboardCard": [
+    {
+      "input": {
+        "id": {
+          "key": "",
+          "value": "23"
+        },
+        "name": {
+          "key": "name",
+          "value": "New Heross"
+        },
+        "routerLink": {
+          "key": "roter",
+          "value": "/user"
+        },
+        "iconClass": {
+          "key": "",
+          "value": ""
+        },
+        "color": {
+          "key": "",
+          "value": "Green"
+        }
+      },
+      "component": {},
+      "services": {
+        "provide": "",
+        "useClass": "",
+        "deps": []
+      },
+      "id": 1
+    },
+    {
+      "input": {
+        "id": {
+          "key": "",
+          "value": "8"
+        },
+        "name": {
+          "key": "name",
+          "value": "New Hero"
+        },
+        "routerLink": {
+          "key": "roter",
+          "value": "/user"
+        },
+        "iconClass": {
+          "key": "",
+          "value": ""
+        },
+        "color": {
+          "key": "",
+          "value": "Green"
+        }
+      },
+      "component": {},
+      "services": {
+        "provide": "",
+        "useClass": "",
+        "deps": []
+      },
+      "id": 2
+    }
+  ]
+}
