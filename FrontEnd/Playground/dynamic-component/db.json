@@ -61,6 +61,37 @@
         "deps": []
       },
       "id": 2
+    },
+    {
+      "input": {
+        "id": {
+          "key": "",
+          "value": "8"
+        },
+        "name": {
+          "key": "name",
+          "value": "New Hero"
+        },
+        "routerLink": {
+          "key": "roter",
+          "value": "/user"
+        },
+        "iconClass": {
+          "key": "",
+          "value": ""
+        },
+        "color": {
+          "key": "",
+          "value": "red"
+        }
+      },
+      "component": {},
+      "services": {
+        "provide": "",
+        "useClass": "",
+        "deps": []
+      },
+      "id": 3
     }
   ]
 }

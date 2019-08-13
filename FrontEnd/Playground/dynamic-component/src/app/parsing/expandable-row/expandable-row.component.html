@@ -1,0 +1,16 @@
+<h3 (click)="onDrill()">This Service has 14 Tables</h3>
+<ng-container  *ngIf="drillDown">
+        <table table-layout="fixed" class="table table-hover">
+                <thead>
+                  <tr>
+                    <th  scope="col">TABLE NAME</th>
+                    <th  scope="col">STATUS</th>
+                    
+                  </tr>
+                </thead>
+                </table>
+
+    <ng-container *ngFor="let table of groups">
+    <app-tables   [table]="table"></app-tables>    
+</ng-container>
+</ng-container>

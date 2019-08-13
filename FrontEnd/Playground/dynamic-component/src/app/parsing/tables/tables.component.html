@@ -1,0 +1,31 @@
+<table class="table table-hover">
+
+
+    <tbody>
+        <tr class="table-active">
+
+            <td width="50%">{{ table.name }}</td>
+            <td width="50%" (click)="expand()">{{ table.status }}</td>
+
+        </tr>
+
+    </tbody>
+   
+</table>
+<ng-container *ngIf="expanded">
+
+        <table class="table table-hover child">
+            <thead>
+                <tr>
+                    <th  scope="col">ENTITY NAME</th>
+                    <th  scope="col">ENTITY STATUS</th>
+
+                </tr>
+            </thead>
+        </table>
+
+        
+        <ng-container *ngFor="let entity of entities">
+            <app-entity [entity]="entity"></app-entity>
+        </ng-container>
+    </ng-container>

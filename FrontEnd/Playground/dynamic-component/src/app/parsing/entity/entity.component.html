@@ -1,0 +1,23 @@
+<table class="table table-hover">
+
+
+        <tbody>
+            <tr class="table-active">
+    
+                <td >{{ entity.name }}</td>
+                <td (click)="entityExpand()">{{ entity.status }}</td>
+    
+            </tr>
+    
+        </tbody>
+        
+</table>
+<ng-container *ngIf="expandent">
+        <div class=" mycard card text-white bg-primary mb-3" >
+                <div class="card-header">Message</div>
+                <div class="card-body">
+                  <h4 class="card-title">Primary card title</h4>
+                  <p class="card-text">{{ message }}</p>
+                </div>
+              </div>
+</ng-container>

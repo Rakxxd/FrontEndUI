@@ -16,6 +16,10 @@ const routes: Routes = [
   {
     path: 'dashboard',
     redirectTo: '/dashboard'
+  },
+  {
+    path: 'table',
+    redirectTo: '/table'
   }
 
 ];

@@ -16,6 +16,8 @@ export class DashboardCard {
     
   };
 
+  
+
    public metadataVar: any = {
     ID: new InjectionToken<string>('id'),
     NAME: new InjectionToken<string>('name'),

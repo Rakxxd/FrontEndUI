@@ -41,7 +41,7 @@ export class DashboardComponent implements OnInit, OnChanges {
      .subscribe( data => data.forEach((singleCard)=>this.cardsArray.push(
        new DashboardCard({
         id: { 
-          key: eval("this.cardsArray"),
+          key: DashboardCard.metadata.ID,
           value :"8"
         },
         name: {

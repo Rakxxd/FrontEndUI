@@ -16,9 +16,7 @@ export class DashboardCardSpawnerComponent implements OnInit {
   @ViewChild('spawn', {read: ViewContainerRef, static:true}) container: ViewContainerRef;
 
   
-  constructor(private resolver: ComponentFactoryResolver, private dash : DashboardCard
-    
-    ) {
+  constructor(private resolver: ComponentFactoryResolver) {
       
     //this.dboar = new DashboardCard({},{},{}):
   }
@@ -30,9 +28,8 @@ export class DashboardCardSpawnerComponent implements OnInit {
       return;
     }
     let inputProviders =[    
-       {provide: this.dash.input.id.key, useValue: data.input.id.value, deps: []},
-       {provide: DashboardCard.metadata.NAME, useValue: data.input.name.value, deps: []},
-       //{provide: data.input.id.key['input']['name']['key'], useValue: data.input.name.value, deps: []},
+       {provide: DashboardCard.metadata.ID, useValue: data.input.id.value, deps: []},
+       {provide: DashboardCard.metadata.NAME, useValue: data.input.name.value, deps: []},       
        {provide: DashboardCard.metadata.ROUTERLINK, useValue: data.input.routerLink.value, deps: []},
        {provide: DashboardCard.metadata.ICONCLASS, useValue: data.input.iconClass.value, deps: []},
        {provide: DashboardCard.metadata.COLOR , useValue: data.input.color.value, deps: []}
@@ -40,7 +37,7 @@ export class DashboardCardSpawnerComponent implements OnInit {
     
     ] 
     console.log(data);
-    console.log();
+    //console.log(this.dash.metadataVar.ID);
     //console.log(eval(nameData));
     
 

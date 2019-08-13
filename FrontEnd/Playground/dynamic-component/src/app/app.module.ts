@@ -13,6 +13,7 @@ import {
   MatTooltipModule
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { ParsingModule } from './parsing/parsing.module';
 
 
 
@@ -20,6 +21,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
   declarations: [
     AppComponent,
     HomeComponent,
+    
     
   ],
   imports: [
@@ -37,6 +39,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatTooltipModule,
     MatSidenavModule,
     FlexLayoutModule,
+    ParsingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
