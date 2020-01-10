@@ -10,10 +10,7 @@ workflows:
   welcome:
     # Run the welcome/run job in its own container
     jobs:
-      my-job:
-        
-        working_directory: ~/repo
-        
-        steps:
-            - checkout
-            - run: npm install
+      working_directory: ~/repo      
+      steps:
+          - checkout
+          - run: npm install
