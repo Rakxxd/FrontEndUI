@@ -13,5 +13,6 @@ jobs:
       IMAGETAG: latest
     working_directory: ~/main
     steps:
+      - run: echo "New Changes"
       - run: echo "This is pipeline ID << pipeline.id >>"
       - run: npm install
